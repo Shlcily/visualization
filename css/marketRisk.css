@@ -1,0 +1,306 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 1920px;
+  height: 1080px;
+  transform-origin: 0 0;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+.content {
+  width: 1920px;
+  height: 1080px;
+  /* background-image: url("../image/bg.jpg"); */
+  background-image: url("../image/bg1.jpg");
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+.marketRisk_left {
+    width: 1500px;
+    height: 875px;
+    position: absolute;
+    left: 42px;
+    top: 152px;
+}
+.bank_charts {
+    margin-right: 55px;
+}
+/* 交易账户 */
+.rick_left_top {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 105px;
+    padding-left: 35px;
+}
+.accounts_list {
+    width: 730px;
+    height: 100%;
+    padding-left: 35px;
+    float: left;
+}
+.accounts_list:first-child{
+    padding-left: 0;
+}
+.list_left {
+    width: 405px;
+    height: 100%;
+    margin-right: 40px;
+    padding-left: 10px;
+    display: inline-block;
+    float: left;
+}
+.list_right,.bank_charts {
+    float: right;
+    width: 250px;
+}
+.channel_title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+    height: 50px;
+    line-height: 50px;
+}
+.hierarchyBank {
+    margin-top: 20px;
+    font-size: 40px;
+    float: left;
+    padding: 0 10px;
+    font-weight: bolder;
+    background: linear-gradient(180deg, #fff6c5 55%, #efc976 45%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.unit {
+    float: left;
+    margin-top: 35px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.bank_charts,.list_right{
+    position: relative;
+}
+.percentages {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+/* 仪表盘 */
+#riskMarkChart {
+    background: rgba(245, 235, 212,.3);
+}
+/* 法人占比 */
+.corporate{
+    left: 42px;
+}
+/* 账户债券占比 */
+.bound{
+    bottom: 36px;
+}
+/* 信用债券占比 */
+.credit{
+    bottom: 26px;
+}
+/* 基金债券占比 */
+.found{
+    left: 35px;
+    bottom: 36px;
+}
+/* 货币债券基金 */
+.currency{
+    left: 35px;
+    bottom: 25px;
+}
+/* 银行账户 */
+.rick_left_bottom {
+    width: 100%;
+    height: 520px;
+}
+.rick_left_bottom .rick_bottom_left:nth-child(2){
+    padding-left: 45px;
+}
+.rick_bottom_left {
+    width: 730px;
+    height: 100%;
+    
+}
+.rick_bottom_left .bottom_top {
+    padding: 0 20px;
+    height: 258px;
+}
+.bank_left {
+    width: 360px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+.channel_change_bank{
+    width: 100%;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    color: #c7efff;
+    margin-bottom: 11px;
+}
+.channel_change_bank span {
+    margin: 0 10px;
+    font-size: 29px;
+}
+.channel_change_bank .hiera_bank{
+    padding-left: 10px;
+    font-weight: bolder;
+    background: linear-gradient(180deg, #fff6c5 55%, #efc976 45%);
+    color: transparent;
+    -webkit-background-clip: text;
+ }
+.channel_bank_title {
+    height: 75px;
+    min-width: 135px;
+    float: left;
+    text-align: right;
+    padding-left: 15px;
+}
+.channel_bank_title p:first-child {
+    margin-top: 15px;
+    font-size: 19px;
+}
+.channel_bank_title p:nth-child(2) {
+    font-size: 17px;
+    font-weight: bolder;
+    color: #18a9e2;
+}
+.channel_bank_end {
+    margin-bottom: 13px;
+    width: 100%;
+    height: 75px;
+    font-weight: bolder;
+}
+.channel_bank_data {
+    padding-top: 8px;
+    /* float: right;
+    margin-right: 25px; */
+    float: left;
+    margin-left: 8px;
+}
+.channel_bank_data p{
+    margin: 0 0;
+}
+.channel_bank_time {
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 19px;
+}
+.rick_bottom_left ,.rick_bottom_right {
+    float: left;
+    /* padding: 7px 25px; */
+    padding-left: 20px;
+}
+
+
+/* 右边布局 ---信息推送 */
+.marketRisk_right {
+    width: 255px;
+    height: 945px;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+}
+.marketRisk_right h3 {
+    padding-left: 12px;
+    margin-bottom: 30px;
+}
+.message_content {
+    width: 100%;
+    height: 202px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.message_title,.message_subtitle {
+    font-size: 20px;
+}
+.message_subtitle {
+    color: #b0ddfe;
+}
+.message_subtitle {
+    color: #fcde88;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.message_desc {
+    border-top: 1px solid #1c5988;
+    padding-top: 10px;
+}
+.desc {
+    height: 41px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.detail_info{
+    margin-top: 15px;
+    width: 115px;
+    height: 35px;
+    padding: 0 20px;
+    background: #1648a7;
+    line-height: 35px;
+    color: #4ae3ff;
+    border-radius: 5px;
+    text-align: center;
+}
+.noData {
+    text-align: center;
+    line-height: 172px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #999;
+}
+
+/* 时间日期样式 */
+.mount {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    height: 35px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.mount #dateTime {
+    font-size: 24px;
+}
+/* 公共通用样式 */
+.add {
+    color: #ff6029;
+}
+.reduce {
+    color: #2eff29;
+}

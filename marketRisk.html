@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>市场风险限额总览</title>
+    <link rel="stylesheet" href="css/marketRisk.css">
+</head>
+
+<body>
+    <div class="content">
+        <!-- 时间日期 -->
+        <div class="mount">
+            <span id="dateYear"></span>
+            <span id="dateTime"></span>
+            <span id="dateMount"></span>
+        </div>
+        <div class="marketRisk_left">
+            <div class="rick_left_top">
+                <div class="accounts_list">
+                    <div class="bank_left">
+                        <div class="channel_title">银行集团（含信银国际）层级</div>
+                        <div class="channel_bank_end">
+                            <div class="channel_bank_title">
+                                <p>债券投资久期</p>
+                                <p>期末水平</p>
+                            </div>
+                            <div class="channel_bank_data">
+                                <p class="hierarchyBank" id="groundBond"></p>
+                                <span class="channel_bank_time">亿元</span>
+                            </div>
+                        </div>
+                        <div class="channel_change_bank">限额值 <span class="hiera_bank" id="groupLimit"></span>亿元</div>
+                        <div class="channel_change_bank" id="grounptoggle">日变动 <span id="grounpChange"></span>亿元</div>
+                    </div>
+                    <div class="bank_charts">
+                        <div class="percentages">限额占比</div>
+                        <!-- 仪表盘  -->
+                        <div id="tradegroupChart" style="height:250px"></div>
+                    </div>
+                </div>
+                <div class="accounts_list">
+                    <div class="bank_left bank_leftR">
+                        <div class="channel_title">本行法人层级</div>
+                        <div class="channel_bank_end">
+                            <div class="channel_bank_title">
+                                <p>风险价值</p>
+                                <p>期末水平</p>
+                            </div>
+                            <div class="channel_bank_data">
+                                <p class="hierarchyBank" id="corporateBond"></p>
+                                <span class="channel_bank_time">亿元</span>
+                            </div>
+                        </div>
+                        <div class="channel_change_bank">限额值 <span class="hiera_bank" id="corporateLimit"></span>亿元</div>
+                        <div class="channel_change_bank" id="corporatetoggle">日变动 <span id="corporateChange"></span>亿元</div>
+                    </div>
+                    <div class="bank_charts">
+                        <div class="percentages corporate">限额占比</div>
+                        <!-- 仪表盘  -->
+                        <div id="tradelegalchart" style="height:250px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rick_left_bottom">
+                <div class="rick_bottom_left">
+                    <div class="bottom_top">
+                        <div class="bank_left">
+                            <div class="channel_title">银行账户债券投资限额</div>
+                            <div class="channel_bank_end">
+                                <div class="channel_bank_title">
+                                    <p>债券投资久期</p>
+                                    <p>期末水平</p>
+                                </div>
+                                <div class="channel_bank_data">
+                                    <p class="hierarchyBank" id="accountBond"></p>
+                                    <span class="channel_bank_time">年</span>
+                                </div>
+                            </div>
+                            <div class="channel_change_bank">限额值 <span class="hiera_bank" id="accountLimit"></span>年</div>
+                            <div class="channel_change_bank" id="accounttoggle">日变动 <span id="accountChange"></span>年</div>
+                        </div>
+                        <div class="list_right">
+                            <div class="percentages bound">限额占比</div>
+                            <!-- 仪表盘  -->
+                            <div id="bankBondscharts" style="height:250px"></div>
+                        </div>
+                    </div>
+                    <div class="bottom_top">
+                        <div class="bank_left">
+                            <div class="channel_title"></div>
+                            <div class="channel_bank_end">
+                                <div class="channel_bank_title">
+                                    <p>信用债投资规模占比</p>
+                                    <p>期末水平</p>
+                                </div>
+                                <div class="channel_bank_data">
+                                    <p class="hierarchyBank" id="creditBond"></p>
+                                    <span class="channel_bank_time">%</span>
+                                </div>
+                            </div>
+                            <div class="channel_change_bank">限额值 <span class="hiera_bank" id="creditLimit"></span>%</div>
+                            <div class="channel_change_bank" id="creditChangeToggle">日变动 <span id="creditChange"></span>%</div>
+                        </div>
+                        <div class="list_right">
+                            <div class="percentages credit">限额占比</div>
+                            <!-- 仪表盘  -->
+                            <div id="bankCreditcharts" style="height:250px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rick_bottom_left">
+                    <div class="bottom_top">
+                        <div class="bank_left">
+                            <div class="channel_title">银行账户基金投资限额</div>
+                            <div class="channel_bank_end">
+                                <div class="channel_bank_title">
+                                    <p>债券型基金规模</p>
+                                    <p>期末水平</p>
+                                </div>
+                                <div class="channel_bank_data">
+                                    <p class="hierarchyBank" id="fundBond"></p>
+                                    <span class="channel_bank_time">亿元</span>
+                                </div>
+                            </div>
+                            <div class="channel_change_bank">限额值 <span class="hiera_bank" id="fundLimit"></span>亿元</div>
+                            <div class="channel_change_bank" id="fundChangeToggle">日变动 <span id="fundChange"></span>亿元</div>
+                        </div>
+                        <div class="list_right">
+                            <div class="percentages found">限额占比</div>
+                            <!-- 仪表盘  -->
+                            <div id="bankFundcharts" style="height:250px"></div>
+                        </div>
+                    </div>
+                    <div class="bottom_top">
+                        <div class="bank_left">
+                            <div class="channel_title"></div>
+                            <div class="channel_bank_end">
+                                <div class="channel_bank_title">
+                                    <p>货币型基金规模</p>
+                                    <p>期末水平</p>
+                                </div>
+                                <div class="channel_bank_data">
+                                    <p class="hierarchyBank" id="moneyBond"></p>
+                                    <span class="channel_bank_time">亿元</span>
+                                </div>
+                            </div>
+                            <div class="channel_change_bank">限额值 <span class="hiera_bank" id="moneyLimit">320</span>亿元</div>
+                            <div class="channel_change_bank" id="moneyChangeToggle">日变动 <span id="moneyChange"></span>亿元</div>
+                        </div>
+                        <div class="list_right">
+                            <div class="percentages currency">限额占比</div>
+                            <!-- 仪表盘  -->
+                            <div id="bankCurrencycharts" style="height:250px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 消息推送-模块 -->
+        <div class="marketRisk_right">
+            <h3>信息推送</h3>
+            <div id="message_box">
+                <!-- 有数据 - 样式 -->
+                <!-- <div class="message_content">
+                    <div class="message_title">推送1</div>
+                    <div class="message_subtitle">信息推送标题</div>
+                    <div class="message_desc">
+                        <div class="desc">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+                        <div class="detail_info">详情</div>
+                    </div>
+                </div> -->
+                <!-- 无数据- 样式 -->
+                <!-- <div class="message_content noData">
+                    暂无数据
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="jslib/jquery.min.js"></script>
+    <script src="jslib/echarts.3.71.js"></script>
+    <script src="jslib/bodyScale.js"></script>
+    <script src="jslib/moment.js"></script>
+    <script src="jslib/mosquitto-1.1.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/marketRisk.js"></script>
+</body>
+
+</html>

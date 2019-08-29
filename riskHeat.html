@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>国别风险热力图</title>
+    <link rel="stylesheet" href="./css/riskHeat.css">
+</head>
+
+<body>
+    <div class="content">
+        <!-- 时间日期 -->
+        <div class="moment">
+            <span id="dateYear"></span>
+            <span id="dateTime"></span>
+        </div>
+        <!-- 债权总计-模块 -->
+        <div class="totalBondsContent">
+            <div class="totalBonds">
+                <div class="title">境外债权总计（本行）</div>
+                <div class="number"><span id="totalBank" class="transactions-total-num"></span> <span class="money">亿元</span></div>
+            </div>
+            <div class="totalBonds">
+                <div class="title">境外债权总计（并表）</div>
+                <div class="number"><span id="totalTable" class="transactions-total-num"></span> </span><span class="money">亿元</span></div>
+            </div>
+        </div>
+        <!-- 五洲债权分部-模块 -->
+        <div class="bondsSistribution">
+            <div class="bondList">
+                <div class="listTitle">亚洲债权</div>
+                <div class="listData"><span id="Asia"></span> <span class="numType">亿元</span></div>
+            </div>
+            <div class="bondList">
+                <div class="listTitle">欧洲债权</div>
+                <div class="listData"><span id="Europe"></span> <span class="numType">亿元</span></div>
+            </div>
+            <div class="bondList">
+                <div class="listTitle">非洲债权</div>
+                <div class="listData"><span id="Africa"></span> <span class="numType">亿元</span></div>
+            </div>
+            <div class="bondList">
+                <div class="listTitle">美洲债权</div>
+                <div class="listData"><span id="America"></span> <span class="numType">亿元</span></div>
+            </div>
+            <div class="bondList">
+                <div class="listTitle">大洋洲债权</div>
+                <div class="listData"><span id="Oceania"></span> <span class="numType">亿元</span></div>
+            </div>
+        </div>
+        <!-- 风险评级 - 模块 -->
+        <div class="riskRating">
+            <div class="gradeContent">
+                <div class="listIcon one">
+                    <div id="circle">
+                        <div id="raduis"></div>
+                    </div>
+                </div>
+                <div class="listRick">
+                    <div class="listRickTitle">风险低</div>
+                    <div class="listRickData">
+                        <span class="listRickNum" id="leaveLower"></span>
+                        <span class="listMoney">亿元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gradeContent">
+                <div class="listIcon two">
+                    <div id="circle">
+                        <div id="raduis"></div>
+                    </div>
+                </div>
+                <div class="listRick">
+                    <div class="listRickTitle">风险较低</div>
+                    <div class="listRickData">
+                        <span class="listRickNum" id="leaveDown"></span>
+                        <span class="listMoney">亿元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gradeContent">
+                <div class="listIcon three">
+                    <div id="circle">
+                        <div id="raduis"></div>
+                    </div>
+                </div>
+                <div class="listRick">
+                    <div class="listRickTitle">风险中等</div>
+                    <div class="listRickData">
+                        <span class="listRickNum" id="leaveMedium"></span>
+                        <span class="listMoney">亿元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gradeContent">
+                <div class="listIcon four">
+                    <div id="circle">
+                        <div id="raduis"></div>
+                    </div>
+                </div>
+                <div class="listRick">
+                    <div class="listRickTitle">风险较高</div>
+                    <div class="listRickData">
+                        <span class="listRickNum" id="leaveHigher"></span>
+                        <span class="listMoney">亿元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gradeContent">
+                    <div class="listIcon fiv">
+                        <div id="circle">
+                            <div id="raduis"></div>
+                        </div>
+                    </div>
+                    <div class="listRick">
+                        <div class="listRickTitle">风险高</div>
+                        <div class="listRickData">
+                            <span class="listRickNum" id="leaveHight"></span>
+                            <span class="listMoney">亿元</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!--  境外债权top12排名 -->
+        <div class="map">
+            <div class="worldTitle">境外债权排名TOP12</div>
+            <div id="worldMap" class="worldMap"></div>
+        </div>
+    </div>
+
+    <script src="jslib/jquery.min.js"></script>
+    <script src="jslib/echarts.3.71.js"></script>
+    <script src="jslib/bodyScale.js"></script>
+    <script src="jslib/moment.js"></script>
+    <script src="jslib/mosquitto-1.1.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="./js/riskHeat.js"></script>
+</body>
+
+</html>
