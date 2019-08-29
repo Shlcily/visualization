@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>银监及人行口径余额情况视图</title>
+    <link rel="stylesheet" href="./css/bankSuperviseBore.css">
+</head>
+
+<body>
+ <div class="father">
+        <!-- 左边折线图部分 -->
+        <div class="left clearfix">
+            <p class="cb_title">银监口径普惠法人贷款</p>
+            <p class="cb_balance">当前贷款余额</p>
+            <div class="cb_balance_number"></div>
+            <p class="top_yeara">较年初</p>
+            <div class="t_yeara"></div>
+            <p class="top_montha">较月初</p>
+            <div class="t_montha"></div>
+            <p class="cb_residence">当前户数</p>
+            <div class="cb_residence_number"></div>
+            <p class="top_yearb">较年初</p>
+            <div class="t_yearb"></div>
+            <p class="top_monthb">较月初</p>
+            <div class="t_monthb"></div>
+            <!--<div class="t_balance"></div>
+            <p class="t_balance_title">余额</p>
+            <div class="t_house"></div>
+            <p class="t_house_title">户数</p>-->
+            <div class="left_top"></div>
+            <p class="people_title">人行口径普惠法人贷款</p>
+            <p class="people_balance">当前贷款余额</p>
+            <div class="people_balance_number"></div>
+            <p class="bottom_yeara">较年初</p>
+            <div class="b_yeara"></div>
+            <p class="bottom_montha">较月初</p>
+            <div class="b_montha"></div>
+            <p class="people_residence">当前户数</p>
+            <div class="people_residence_number"></div>
+            <p class="bottom_yearb">较年初</p>
+            <div class="b_yearb"></div>
+            <p class="bottom_monthb">较月初</p>
+            <div class="b_monthb"></div>
+            <!--<div class="b_balance"></div>
+            <p class="b_balance_title">余额</p>
+            <div class="b_house"></div>
+            <p class="b_house_title">户数</p>-->
+            <div class="left_bottom"></div>
+        </div>
+        <!-- 右边排行榜部分 -->
+        <div class="right" id="main">
+            <div class="nav" id="nav">
+                <ul>
+                    <li class="right_top changecolor clearfix">分组余额增量排行榜</li>
+                    <li class="right_bottom clearfix">全行余额增量排行榜</li>
+                </ul>
+            </div>
+            <div class="banner" id="banner">
+                <div class="banner_slide right_tp">
+                    <p>人行口径普惠法人贷款余额排行榜</p>
+                    <p>
+                        <span class="p_left clearfix">战略支点行</span>
+                        <span class="p_right clearfix">重点区域行</span>
+                    </p>
+                    <div class="line clearfix"></div>
+                    <!-- 重点区域行 -->
+                    <div class="point clearfix"></div>
+                    <!-- 支行 -->
+                    <div class="pivot clearfix"></div>
+                </div>
+                <div class="banner_slide right_bm">
+                    <p>人行口径普惠法人贷款余额排行榜</p>
+                    <p>
+                        <span class="p_left clearfix">正增长</span>
+                        <span class="p_right clearfix">负增长</span>
+                    </p>
+                    <div class="line clearfix"></div>
+                    <!-- 正增长 -->
+                    <div class="add clearfix"></div>
+                    <!-- 负增长 -->
+                    <div class="minus clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 时间 -->
+        <div class="moment">
+            <span id="dateYear"></span>
+            <span id="dateTime"></span>
+        </div>
+    </div>
+
+
+     <!--  Jquery库  -->
+    <script src="jslib/jquery.min.js"></script>
+    <!--  Echarts图表库  -->
+    <script src="jslib/echarts.3.71.js"></script>
+    <!--  适配（放大缩小）库  -->
+    <script src="jslib/bodyScale.js"></script>
+    <!--  日期时间组件库  -->
+    <script src="jslib/moment.js"></script>
+    <!--  mq组件库  -->
+    <script src="jslib/mosquitto-1.1.min.js"></script>
+    <!--  网络配置文件  -->
+    <script src="js/config.js"></script>
+    <!--  js文件  -->
+    <script src="./js/bankSuperviseBore.js"></script>
+</body>
+
+</html>
