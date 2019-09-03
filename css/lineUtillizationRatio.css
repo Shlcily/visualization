@@ -1,0 +1,241 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 1920px;
+    height: 1080px;
+    transform-origin: 0 0;
+}
+
+.content {
+    width: 1920px;
+    height: 1080px;
+    background-image: url("../images/bannerBg.png");
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* 日期时间-样式 */
+.moment {
+    position: absolute;
+    top: 14px;
+    right: 17px;
+}
+
+#dateTime {
+    padding-left: 10px;
+    font-size: 26px;
+}
+
+/*带宽使用率样式*/
+.t1{
+    position: absolute;
+    border-radius: 5px;
+    width: 22px;
+    height: 8px;
+    top: 10px;
+}
+.t1G {
+    left: 95px;
+    background-color: #01ff07;
+}
+.t10 {
+    left: 175px;
+    background-color: #ff9f00;
+}
+.t1R {
+    left: 264px;
+    background-color: #ff1700;
+}
+
+/*网络骨干线路*/
+.backbone {
+    position: absolute;
+    top: 65px;
+    left: 16px;
+    width: 735px;
+    height: 995px;
+    padding: 7px 15px;
+}
+.backboneHeader {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+}
+.backboneTitle {
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+.precentRatio {
+    float: right;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    color: #8af8fd;
+    font-size: 15px;
+    position: relative;
+}
+.precentRatio span:nth-child(n) {
+    margin-left: 42px;
+}
+.backboneContent {
+    width: 100%;
+    height: 945px;
+    overflow: hidden;
+}
+.contentList {
+    width: 100%;
+    overflow: hidden;
+}
+.contentList div{
+    float: left;
+}
+.contentList .boneName{
+    line-height: 26px;
+    width: 110px;
+    text-align: center;
+    color: #fff;
+    margin-right: 20px;
+}
+.contentList .nameBG{
+    background-color: #142e69;
+}
+.boneDev {
+    width: 279px;
+    margin-top: 2px;
+    color: #fff;
+    padding: 0px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #435f86;
+    margin-right: 8px;
+}
+.progress {
+    width: 80px;
+    height: 6px;
+    margin: 6px 8px 0px 8px;
+    display: block;
+    float: left;
+    text-align: center;
+    border-radius: 0px;
+    background-color: #15380D;
+}
+.percentage ,.molecule {
+    color: #01ff07;
+}
+.ratio {
+    margin-left: 20px;
+}
+
+
+/*互联网线路*/
+.network {
+    position: absolute;
+    left: 773px;
+    width: 1130px;
+    height: 115px;
+     padding: 7px 15px;
+}
+.internet {
+    top: 64px;
+}
+.metropolitan {
+    top: 194px;
+}
+.lineList {
+    width: 131px;
+    height: 64px;
+    border: 1px solid blue;
+    border-radius: 7px;
+    float: left;
+    margin-right: 6px;
+}
+.lineList .listHead {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background: #092a55;
+    height: 33px;
+}
+.listHead .dots {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #00f120;
+    float: left;
+    cursor: pointer;
+    margin: 12px 5px 0px 13px;
+}
+.listHead .listName {
+    display: table;
+    float: left;
+    width: 76px;
+    height: 100%;
+    margin-top: 2px;
+    font-size: 11px;
+}
+.listHead .listName span {
+    display: table-cell;
+    vertical-align: middle;
+}
+.listNumRatio {
+    float: right;
+    margin: 0px;
+    margin-right: 7px;
+}
+.lineList .listNum {
+    font-size: 12px;
+    padding-left: 7px;
+}
+.lineList .listPro {
+    margin: 0;
+    margin-left: 7px;width: 105px;
+}
+.progress-bar {
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    transition: width .6s ease;
+}
+
+
+/*外联线路*/
+.outreach {
+    position: absolute;
+    top: 325px;
+    left: 773px;
+    width: 1130px;
+    height: 730px;
+     padding: 7px 15px;
+}
+.listHead .outreachName {
+    width: 96px;
+}

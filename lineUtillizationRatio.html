@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+ <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>网络线路带宽利用率</title>
+        <link rel="stylesheet" href="css/lineUtillizationRatio.css">
+    </head>
+    <body>
+
+    <section class="content">
+        <!--日期时间-->
+        <div class="moment">
+            <span id="dateYear"></span>
+            <span id="dateTime"></span>
+            <span id="period"></span>
+        </div>
+        <!--网络骨干线路-->
+        <div class="backbone">
+            <div class="backboneHeader">
+                <div class="precentRatio">
+                    <span>带宽使用率</span>
+                    <span class="t1 t1G"></span>
+                    <span>0~50</span>
+                    <span class="t1 t10"></span>
+                    <span>50~80</span>
+                    <span class="t1 t1R"></span>
+                    <span>80~100</span>
+                </div>
+            </div>
+            <div class="backboneContent" id="backboneContent">
+                <!--<div class="contentList">
+                    <div class="boneName nameBG">总行营业部</div>
+                    <div class="boneDev">
+                        <span style="float: left;">生产</span>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <span class="percentage">25.30%</span>
+                        <span class="ratio"><span class="molecule">8.5</span>/25</span>
+                    </div>
+                    <div class="boneDev">
+                        <span style="float: left;">办公</span>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <span class="percentage">25.30%</span>
+                        <span class="ratio"><span class="molecule">8.5</span>/25</span>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+        <!--互联网线路-->
+        <div class="internet network">
+            <div class="backboneHeader">
+                <div class="precentRatio">
+                    <span>带宽使用率</span>
+                    <span class="t1 t1G"></span>
+                    <span>0~50</span>
+                    <span class="t1 t10"></span>
+                    <span>50~80</span>
+                    <span class="t1 t1R"></span>
+                    <span>80~100</span>
+                </div>
+            </div>
+            <div class="internetContent" id="internetContent">
+                <!--<div class="lineList">
+                    <div class="listHead">
+                        <div class="dots"></div>
+                        <div class="listName"><span>网银二中心移动主</span></div>
+                    </div>
+                    <div class="listNum">
+                        <span class="percentage">26%</span>
+                        <span class="ratio listNumRatio"><span class="molecule">8.5</span>/25</span>
+                    </div>
+                    <div class="progress listPro">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+        <!--城域网线路-->
+        <div class="metropolitan network">
+            <div class="backboneHeader">
+                <div class="precentRatio">
+                    <span>带宽使用率</span>
+                    <span class="t1 t1G"></span>
+                    <span>0~50</span>
+                    <span class="t1 t10"></span>
+                    <span>50~80</span>
+                    <span class="t1 t1R"></span>
+                    <span>80~100</span>
+                </div>
+            </div>
+            <div class="metroContent" id="metroContent"></div>
+        </div>
+
+        <!--外联线路-->
+        <div class="outreach">
+            <div class="backboneHeader">
+                <div class="precentRatio">
+                    <span>带宽使用率</span>
+                    <span class="t1 t1G"></span>
+                    <span>0~50</span>
+                    <span class="t1 t10"></span>
+                    <span>50~80</span>
+                    <span class="t1 t1R"></span>
+                    <span>80~100</span>
+                </div>
+            </div>
+            <div class="outreachContent" id="outreachContent"></div>
+        </div>
+
+    </section>
+
+    <!--  Jquery库  -->
+    <script src="jslib/jquery.min.js"></script>
+    <!--  适配（放大缩小）库  -->
+    <script src="jslib/bodyScale.js"></script>
+    <!--  日期时间组件库  -->
+    <script src="jslib/moment.js"></script>
+    <!--  mq组件库  -->
+    <script src="jslib/mosquitto-1.1.min.js"></script>
+    <!--  网络配置文件  -->
+    <script src="js/config.js"></script>
+    <!--  js文件  -->
+    <script src="js/lineUtillizationRatio.js"></script>
+    </body>
+</html>
